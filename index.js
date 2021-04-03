@@ -12,7 +12,7 @@ const app = express()
 app.use(cors());
 app.use(bodyParser.json());
 
-var serviceAccount = require("/cwd/projects/burj-al-arab-server/burj-al-arab-98-firebase-adminsdk-d4ngz-39921f1516.json");
+var serviceAccount = require("/cwd/projects/burj-al-arab-server/configs/burj-al-arab-98-firebase-adminsdk-d4ngz-39921f1516.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
